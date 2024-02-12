@@ -1,0 +1,125 @@
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: hsl(218, 100%, 94%);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 27rem;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* //////////////// */
+/* TOP SECTION */
+/* ////////////// */
+.top {
+  margin: 2rem 6rem 2rem 2.4rem;
+}
+
+.heading-primary {
+  color: hsl(179, 58%, 49%);
+}
+
+.community-heading {
+  color: hsl(71, 81%, 54%);
+}
+
+.top-text {
+  color: hsl(218, 22%, 67%);
+}
+
+/* /////////////// */
+/* BOTTOM SECTION */
+/* ///////////// */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: hsl(204, 43%, 93%);
+}
+
+.grid-left {
+  padding: 1.2rem 3rem 0 3rem;
+  background-color: hsl(179, 62%, 43%);
+}
+.grid-right {
+  padding: 1.2rem 7rem 1rem 2.6rem;
+  background-color: hsl(179, 58%, 49%);
+}
+
+.heading-secondary {
+  margin-bottom: 2.4rem;
+}
+
+.cost {
+  display: grid;
+  grid-template-columns: 70px 150px;
+  align-items: center;
+
+  margin-bottom: 1.6rem;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.monthly {
+  color: hsl(203, 23%, 80%);
+  margin: 0;
+}
+
+.subscription-text {
+  margin-bottom: 2.4rem;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background-color: hsl(71, 80%, 56%);
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  border-radius: 7px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover,
+.button:active {
+  background-color: hsl(71, 76%, 50%);
+}
+
+.why-text {
+  color: hsla(203, 48%, 89%, 0.884);
+}
+
+@media (max-width: 425px) {
+  .grid {
+    display: block;
+  }
+  .container {
+    display: block;
+    margin: 1.2rem;
+    width: 380px;
+    overflow: hidden;
+  }
+  .button {
+    margin: 0;
+  }
+  .grid-left {
+    padding-bottom: 1.2rem;
+  }
+}
